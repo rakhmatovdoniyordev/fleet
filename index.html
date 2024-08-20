@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="./assets/logo.svg" alt="">
+                </div>
+                <div class="navbar__select">
+                    <select name="" id="">
+                        <option value="">Travelers</option>
+                    </select>
+                </div>
+                <ul class="navbar__collection">
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span>Support</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#">
+                            <span><i class="fa-solid fa-globe"></i> Language</span>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <button>List your property</button>
+                    </li>
+                </ul>
+                <img src="./assets/Notification - Bell.png" alt="">
+                <img src="./assets/avatar.png" alt="">
+                <div onclick="navbarToggle()" class="navbar__menu">
+                    <a style="margin: 0;" href="#"><img src="./assets/burger icon.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container-lg">
+                <div class="hero__background">
+                    <img src="./assets/hero.png" alt="">
+                    <div class="hero__gradient"></div>
+                    <div class="hero__text">
+                        <p class="hero__title">Car rentals </p>
+                        <p>Find and book a great experience.</p>
+                        <button>Start your search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="position: relative;">
+                <div class="hero__card">
+                        <ul class="hero__collection">
+                            <li class="hero__item">
+                                <a href="#">
+                                    <span>Stays</span>
+                                </a>
+                            </li>
+                            <li class="hero__item">
+                                <a href="#">
+                                    <span>Flights</span>
+                                </a>
+                            </li>
+                            <li class="hero__item">
+                                <a href="#">
+                                    <span>Cars</span>
+                                </a>
+                            </li>
+                            <li class="hero__item">
+                                <a href="#">
+                                    <span>Things to do</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="hero__options">
+                            <button>Things to do</button>
+                            <button>Return to same different location</button>
+                        </div>
+                        <div class="hero__date">
+                            <div class="hero__location">
+                                <a href="#"><i class="fa-solid fa-location-arrow"></i></a>
+                                <div class="hero__right">
+                                    <p class="hero__subtitle">Pickup location</p>
+                                    <p>Where are you?</p>
+                                </div>
+                            </div>
+                            <div class="hero__location">
+                                <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                                <div class="hero__right">
+                                    <p class="hero__subtitle">Tue, May 11</p>
+                                    <p>10:00 AM</p>
+                                </div>
+                            </div>
+                            <div class="hero__location">
+                                <a href="#"><i class="fa-solid fa-calendar-days"></i></a>
+                                <div class="hero__right">
+                                    <p class="hero__subtitle">Fri, May 11</p>
+                                    <p>10:00 AM</p>
+                                </div>
+                            </div>
+                            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <div class="reccuring">
+                    <div class="reccuting__left">
+                        <p class="reccuring__title">Popular destinations</p>
+                        <p>for car rentals</p>
+                    </div>
+                    <div class="recurring__right">
+                        <a href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="popular__wrapper">
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <img src="./assets/popular-1.png" alt="">
+                        </div>
+                        <div class="popular__text">
+                            <p class="popular__title">Paris</p>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <img src="./assets/popular-2.png" alt="">
+                        </div>
+                        <div class="popular__text">
+                            <p class="popular__title">London</p>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <img src="./assets/popular-3.png" alt="">
+                        </div>
+                        <div class="popular__text">
+                            <p class="popular__title">Ams</p>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="popular__card">
+                        <div class="popular__img">
+                            <img src="./assets/popular-4.png" alt="">
+                        </div>
+                        <div class="popular__text">
+                            <p class="popular__title">Milan</p>
+                            <p>Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                </div>
+                <button>Show more <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+        <section class="rent">
+            <div class="container">
+                <div class="rent__wrapper">
+                    <div class="rent__text">
+                        <p class="rent__subtitle">supercharge your planning powers</p>
+                        <p class="rent__title">Rent a car in minutes with Fleet</p>
+                        <p class="rent__desc">Stacks is a production-ready library of stackable content blocks built in React Native.</p>
+                        <div class="rent__input">
+                            <input type="text" placeholder="Enter your phone number">
+                            <button><i class="fa-solid fa-arrow-right-long"></i></button>
+                        </div>
+                    </div>
+                    <div class="rent__image">
+                        <img src="./assets/rent.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="explore">
+            <div class="container">
+                <div class="reccuring">
+                    <div class="reccuting__left">
+                        <p class="reccuring__title">Explore nearby</p>
+                        <p>for car rentals</p>
+                    </div>
+                    <div class="recurring__right">
+                        <a href="#"><i class="fa-solid fa-arrow-left-long"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="explore__wrapper">
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-1.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Paris</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-2.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">London</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-3.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Ams</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-3.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Ams</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-4.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Milan</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-1.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Paris</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-2.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">London</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-3.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">Ams</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                    <div class="explore__card">
+                        <div class="explore__image">
+                            <img src="./assets/popular-2.png" alt="">
+                        </div>
+                        <div class="explore__text">
+                            <p class="explore__title">London</p>
+                            <p class="explore__desc">Car rentals in 86 pickup locations</p>
+                        </div>
+                    </div>
+                </div>
+                <button>Show more <i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

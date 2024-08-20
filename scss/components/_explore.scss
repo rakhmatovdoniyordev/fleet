@@ -1,0 +1,85 @@
+.explore{
+    margin-top: 80px;
+    .explore__wrapper{
+        margin-top: 48px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 32px;
+        .explore__card{
+            cursor: pointer;
+            .explore__text{
+                .explore__title{
+                    font-family: $second-font;
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: $second-bg;
+                    margin-top: 20px;
+                    margin-bottom: 8px;
+                }
+                .explore__desc{
+                    font-family: $second-font;
+                    font-size: 12px;
+                    color: #777E90;
+                }
+            }
+        }
+    }
+    button{
+        margin-top: 45px;
+        padding: 16px 24px;
+        border: 2px solid #E6E8EC;
+        border-radius: 90px;
+        background: #fff;
+        font-family: $main-font;
+        font-weight: 700;
+        color: $second-bg;
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 660px) {
+    .reccuring{
+        .reccuting__left{
+            .reccuring__title{
+                font-size: 24px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+        .recurring__right{
+            display: flex;
+        }
+    }
+    .explore{
+        .explore__wrapper{
+            grid-template-columns: 1fr;
+            text-align: center;
+            .explore__card:nth-child(4){
+                display: none;
+            }
+            .explore__card:nth-child(5){
+                display: none;
+            }
+            .explore__card:nth-child(6){
+                display: none;
+            }
+            .explore__card:nth-child(7){
+                display: none;
+            }
+            .explore__card:nth-child(7){
+                display: none;
+            }
+            .explore__card:nth-child(8){
+                display: none;
+            }
+            .explore__card:nth-child(9){
+                display: none;
+            }
+        }
+    }
+
+}

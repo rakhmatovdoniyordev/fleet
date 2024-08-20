@@ -1,0 +1,50 @@
+@font-face {
+    font-family: dm;
+    src: url("../fonts/DMSans_18pt-Regular.ttf");
+}
+@font-face {
+    font-family: poppins;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+
+$main-bg: #3B71FE;
+$second-bg: #23262F;
+$main-font: dm;
+$second-font: poppins;
+
+
+
+.reccuring{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .reccuting__left{
+        .reccuring__title{
+            font-size: 48px;
+            font-family: $main-font;
+            color: $second-bg;
+            font-weight: 700;
+        }
+        p{
+            font-family: $second-font;
+            font-size: 24px;
+            color: #777E90;
+        }
+    }
+    .recurring__right{
+        display: flex;
+        gap: 8px;
+        a{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .5s;
+        }
+        a:hover{
+            border: 2px solid #E6E8EC;
+        }
+    }
+}
