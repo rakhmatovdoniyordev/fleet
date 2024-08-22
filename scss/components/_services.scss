@@ -1,0 +1,92 @@
+.services{
+    margin-top: 130px;
+    .services__title{
+        text-align: center;
+        margin-bottom: 90px;
+        .services__subtitle{
+            font-family: $second-font;
+            font-size: 12px;
+            font-weight: 700;
+            color: #777E90;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        h2{
+            font-family: $main-font;
+            font-size: 48px;
+            font-weight: 700;
+            color: $second-bg;
+            margin-bottom: 32px;
+        }
+        button{
+            padding: 16px 24px;
+            border-radius: 90px;
+            background: $main-bg;
+            color: #fff;
+            font-family: $main-font;
+            font-weight: 700;
+            transition: .4s;
+        }
+        button:hover{
+            opacity: 0.8;
+        }
+    }
+    .services__wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 24px;
+        .services__card{
+            padding: 64px 32px;
+            border-radius: 20px;
+            background: #F4F5F6;
+            img{
+                margin-bottom: 32px;
+            }
+            p{
+                font-family: $second-font;
+                font-weight: 500;
+                color: $second-bg;
+                margin-bottom: 16px;
+            }
+            .services__desc{
+                font-family: $second-font;
+                font-size: 14px;
+                color: #777E90;
+            }
+
+        }
+    }
+}
+
+
+@media (max-width: 990px) {
+    .services{
+        margin-top: 90px;
+        .services__title{
+            margin-bottom: 60px;
+            h2{
+                font-size: 32px;
+                margin-bottom: 26px;
+            }
+        }
+        .services__wrapper{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+@media (max-width: 660px) {
+    .services{
+        margin-top: 80px;
+        .services__title{
+            margin-bottom: 50px;
+            h2{
+                font-size: 32px;
+                margin-bottom: 32px;
+            }
+        }
+        .services__wrapper{
+            grid-template-columns:  1fr;
+        }
+    }
+}

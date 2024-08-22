@@ -36,6 +36,11 @@
         display: flex;
         gap: 12px;
         align-items: center;
+        transition: .5s;
+    }
+    button:hover{
+        background: $second-bg;
+        color: #fff;
     }
 }
 

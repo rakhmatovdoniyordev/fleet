@@ -5,6 +5,7 @@
         display: flex;
         gap: 32px;
         overflow: auto;
+        padding-bottom: 20px;
         .popular__card{
             min-width: 336px;
             width: 336px;
@@ -25,6 +26,13 @@
             }
         }
     }
+    .popular__wrapper::-webkit-scrollbar{
+        height: 8px;
+    }
+    .popular__wrapper::-webkit-scrollbar-thumb{
+        background: #c4c4c4;
+        border-radius: 20px;
+    }
     button{
         margin-top: 45px;
         padding: 16px 24px;
@@ -37,6 +45,11 @@
         display: flex;
         gap: 12px;
         align-items: center;
+        transition: .5s;
+    }
+    button:hover{
+        background: $second-bg;
+        color: #fff;
     }
 }
 

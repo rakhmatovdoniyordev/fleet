@@ -2,7 +2,7 @@
     position: sticky;
     top: 0;
     z-index: 91;
-    background: #ffffffb5;
+    background: #ffffffe1;
     backdrop-filter: blur(4px);
     .navbar{
         display: flex;
@@ -26,6 +26,11 @@
                 font-family: $main-font;
                 font-weight: 700;
                 cursor: pointer;
+                background: transparent;
+                transition: .3s;
+            }
+            select:hover{
+                color: #30343c;
             }
         }
         .navbar__collection{
@@ -38,6 +43,7 @@
             font-size: 14px;
             font-weight: 700;
             .navbar__item{
+                transition: .3s;
                 button{
                     padding: 12px 16px;
                     background: #fff;
@@ -48,8 +54,16 @@
                     font-weight: 700;
                     margin-right: 24px;
                     font-size: 14px;
+                    transition: .5s;
+                }
+                button:hover{
+                    background: $second-bg;
+                    color: #fff;
                 }
             }
+        }
+        .navbar__item:hover{
+            color: #34373f;
         }
         img{
             margin-right: 24px;
@@ -98,7 +112,7 @@
                 left: -50%;
                 width: 50%;
                 height: 100vh;
-                background: dodgerblue;
+                background: #eeeeee;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -111,16 +125,16 @@
                 }
                 .navbar__item:nth-child(1){
                     display: block;
-                    color: #fff;
+                    color: $second-bg;
                     padding: 4px 10px;
-                    border: 1px solid #fff;
+                    border: 1px solid $second-bg;
                     border-radius: 12px;
                 }
                 .navbar__item:nth-child(2){
                     display: block;
-                    color: #fff;
+                    color: $second-bg;
                     padding: 4px 10px;
-                    border: 1px solid #fff;
+                    border: 1px solid $second-bg;
                     border-radius: 12px;
                 }
             }
